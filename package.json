@@ -1,0 +1,15 @@
+{
+  "name": "dashboard-template",
+  "version": "1.0.0",
+  "description": "A template made with javaScript and tailwincss for future refferences",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i src/tailwind.css -o public/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.0.24"
+  }
+}
