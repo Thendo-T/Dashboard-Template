@@ -472,6 +472,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: fixed;
 }
 
+.col-auto {
+  grid-column: auto;
+}
+
 .mt-4 {
   margin-top: 1rem;
 }
@@ -534,6 +538,38 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 16rem;
 }
 
+.max-w-full {
+  max-width: 100%;
+}
+
+.max-w-\[\] {
+  max-width: ;
+}
+
+.max-w-\[2\] {
+  max-width: 2;
+}
+
+.max-w-\[3\] {
+  max-width: 3;
+}
+
+.max-w-\[350\] {
+  max-width: 350;
+}
+
+.max-w-\[350px\] {
+  max-width: 350px;
+}
+
+.max-w-\[250p\] {
+  max-width: 250p;
+}
+
+.max-w-\[250px\] {
+  max-width: 250px;
+}
+
 .shrink-0 {
   flex-shrink: 0;
 }
@@ -542,8 +578,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   cursor: pointer;
 }
 
+.columns-2 {
+  -moz-columns: 2;
+       columns: 2;
+}
+
 .flex-col {
   flex-direction: column;
+}
+
+.flex-col-reverse {
+  flex-direction: column-reverse;
 }
 
 .items-start {
@@ -708,6 +753,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 768px) {
+  .md\:col-auto {
+    grid-column: auto;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -720,8 +769,62 @@ Ensure the default browser behavior of the `hidden` attribute.
     height: 4rem;
   }
 
+  .md\:w-96 {
+    width: 24rem;
+  }
+
+  .md\:w-\[10\] {
+    width: 10;
+  }
+
+  .md\:w-\[100\] {
+    width: 100;
+  }
+
+  .md\:w-\[100\%\] {
+    width: 100%;
+  }
+
+  .md\:w-full {
+    width: 100%;
+  }
+
+  .md\:max-w-\[350px\] {
+    max-width: 350px;
+  }
+
+  .md\:max-w-xs {
+    max-width: 20rem;
+  }
+
+  .md\:max-w-md {
+    max-width: 28rem;
+  }
+
+  .md\:max-w-lg {
+    max-width: 32rem;
+  }
+
+  .md\:flex-none {
+    flex: none;
+  }
+
+  .md\:columns-2 {
+    -moz-columns: 2;
+         columns: 2;
+  }
+
+  .md\:columns-3 {
+    -moz-columns: 3;
+         columns: 3;
+  }
+
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:flex-col {
+    flex-direction: column;
   }
 
   .md\:items-center {
