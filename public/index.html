@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js">></script>
-    <title>Pilboard</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <title>board</title>
   </head>
   <body class="bg-slate-300">
     <header>
@@ -99,22 +99,39 @@
       </div>
     </header>
     <main>
-      <div class="flex-col md:columns-2 md:flex-none">
+      <div class="flex-col transition-transform duration-400 md:columns-2 md:flex-none lg:columns-3 ">
         <div
           class="w-84 border-l hover:bg-yellow-50 hover:border-2 duration-100 transition-all cursor-pointer"
         >
           <canvas id="daily" style="width: 100%; min-width: 200px; max-width: 450px"></canvas>
         </div>
          <div
-          class="w-84 border-l hover:bg-yellow-50 hover:border-2 duration-100 transition-all cursor-pointer mt-4"
+          class="w-84 border-l hover:bg-yellow-50 hover:border-2 duration-100 transition-all cursor-pointer mt-0"
         >
           <canvas id="active" style="width:100%; min-width: 200px; max-width: 450px"></canvas>
         </div>
 
        <div
-          class="w-84 border-l hover:bg-yellow-50 hover:border-2 duration-100 transition-all cursor-pointer mt-4"
+          class="w-84 border-l hover:bg-yellow-50 hover:border-2 duration-100 transition-all cursor-pointer mt-0"
         >
           <canvas id="overview" style="width:100%; min-width: 200px; max-width: 450px"></canvas>
+        </div>
+
+        <div
+          class="w-84 border-l hover:bg-yellow-50 hover:border-2 duration-100 transition-all cursor-pointer"
+        >
+          <canvas id="next" style="width: 100%; min-width: 200px; max-width: 450px"></canvas>
+        </div>
+         <div
+          class="w-84 mb-10 border-l hover:bg-yellow-50 hover:border-2 duration-100 transition-all cursor-pointer mt-0"
+        >
+          <canvas id="live" style="width:100%; min-width: 200px; max-width: 450px"></canvas>
+        </div>
+
+       <div
+          class="w-84 border-l hover:bg-yellow-50 hover:border-2 duration-100 transition-all cursor-pointer mt-0"
+        >
+          <canvas id="down" style="width:100%; min-width: 200px; max-width: 450px"></canvas>
         </div>
       </div>
     </main>
