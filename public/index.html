@@ -1,19 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
-</head>
-<body class="">
+<html lang="en" dir="ltr rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js">></script>
+    <title>Pilboard</title>
+  </head>
+  <body class="bg-slate-300">
     <header>
-   
+      <div
+        class="flex justify-between items-center w-full h-16 flex-col md:flex-row  p-2 bg-red-300/20 md:p-3 md:h-16 lg:p-5"
+      >
+        <div class="flex justify-between items-center w-full">
+          <div class="group flex items-center">
+              <a href="http://seekerfornow.netlify.app">
+            <img
+              class="shrink-0 h-12 w-12 rounded-full"
+              src="./images/lords pilgrim.png"
+              alt="Lords Pilgrim image"
+            />
+            <div class="rtl:mr-3">
+              <p
+                class="text-sm font-medium text-black group-hover:text-cyan-800 "
+              >
+                Thendo Thovhakale
+              </p>
+              <p
+                class="text-sm font-medium text-slate-500 group-hover:text-cyan-600"
+              >
+                Your everyday Programmer
+              </p>
+            </a>
+            </div>
+          </div>
+          <div class="md:hidden text-black">
+            <button id="open" class="block">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+            <button id="close" class="hidden">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div
+          id="menu"
+          class="hidden flex-col bg-red-800/5 items-start p-5 md:space-y-0 text-white md:flex md:flex-row md:items-center md:space-x-5 md:divide-none"
+        >
+          <div>
+            <a
+              class="text-xl font-bold text-black hover:text-cyan-300 transition-colors duration-400"
+              href="index.html"
+              >Intro</a
+            >
+          </div>
+          <div>
+            <a
+              class="text-xl font-bold text-black hover:text-cyan-300 transition-colors duration-400"
+              href="Portfolio.html"
+              >Stats</a
+            >
+          </div>
+          <div>
+            <a
+              class="text-xl font-bold text-black hover:text-cyan-300 cursor-pointer w-fit transition-colors duration-400"
+              href="work.html"
+              >FAQ</a
+            >
+        </div>
+      </div>
     </header>
     <main>
+      <div class="flex-col pt-">
+        <div
+          class="w-64 border-l hover:bg-yellow-50 hover:border-2 duration-100 transition-all cursor-pointer"
+        >
+          <canvas id="daily" style="width: 100%; max-width: 250px"></canvas>
+        </div>
+         <div
+          class="w-64 border-l hover:bg-yellow-50 hover:border-2 duration-100 transition-all cursor-pointer mt-4"
+        >
+          <canvas id="active" style="width:100%;max-width:250px"></canvas>
+        </div>
 
+       <div
+          class="w-64 border-l hover:bg-yellow-50 hover:border-2 duration-100 transition-all cursor-pointer mt-4"
+        >
+          <canvas id="overview" style="width:100%;max-width:250px"></canvas>
+        </div>
+      </div>
     </main>
+    <footer></footer>
     <script src="./main.js"></script>
-</body>
+  </body>
 </html>
